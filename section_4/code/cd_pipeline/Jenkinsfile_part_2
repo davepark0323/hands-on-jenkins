@@ -76,7 +76,7 @@ def deploy(environment) {
 
 def runUnittests() {
 	sh "pwd"
-	sh "pip3 install --no-cache-dir -r section_4/code/cd_pipeline/requirements.txt"
+	sh "pip3 install --no-cache-dir -r section_4/code/cd_pipeline/requirements.txt --user"
 	sh "python3 section_4/code/cd_pipeline/tests/test_flask_app.py"
 }
 
