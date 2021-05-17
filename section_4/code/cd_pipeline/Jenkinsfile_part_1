@@ -13,7 +13,7 @@ pipeline {
             steps { 
 		    echo "WORKSPACE: ${WORKSPACE}"
 		    echo "BUILDER_NUMBER: ${BUILD_NUMBER}"
-		    printenv
+		    echo "PRINTENV: ${printenv}"
 		    buildApp() }
 		}
 
