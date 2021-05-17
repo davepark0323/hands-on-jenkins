@@ -10,7 +10,11 @@ pipeline {
     stages {
 
         stage("Build") {
-            steps { buildApp() }
+            steps { 
+		    echo "WORKSPACE: ${WORKSPACE}"
+		    echo "BUILDER_NUMBER: ${BUILD_NUMBER}"
+		    printenv
+		    buildApp() }
 		}
 
         stage("Deploy - Dev") {
