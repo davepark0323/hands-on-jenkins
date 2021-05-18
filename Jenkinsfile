@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Test Edge') {
           steps {
-            sh 'echo \'Testing Edge\''
+            sh 'echo \'Testing Edge\'; exit 1'
           }
         }
       }
