@@ -6,8 +6,9 @@ pipeline {
 
 		stage('Build') {
 			steps {
-				pwd()
+				pwd()				
 				echo 'Building..'
+				sh "pwd"
 			}
 		}
 
